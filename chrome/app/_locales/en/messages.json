@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Refined Microsoft Teams",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Microsoft Teams, but better",
+    "description": "The description of the application"
+  }
+}
