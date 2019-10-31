@@ -26,9 +26,11 @@ nodemon -i dist/ -i app/scripts --exec gulp build
 ### Release
 
 ```
+rm -rf dist
+rm -f refined-microsoft-teams.zip
 gulp package
 cd dist/
-zip ../refined-microsoft-teams.zip *
+zip -r ../refined-microsoft-teams.zip *
 ```
 
 ## License
