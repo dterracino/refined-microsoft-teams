@@ -1,0 +1,73 @@
+/* NEW THREAD DIVIDER */
+.message-list-divider::before {
+  border-top: 3px solid #6264a7;
+}
+
+
+/* HEADER */
+#left-rail-header {
+  display: none;
+}
+
+.left-rail-header-v2 .ts-channel-list:not(.popover)>.simple-scrollbar {
+  height: calc(100vh - 10rem) !important;
+}
+
+.left-rail-header-v2 .ts-channel-list .ts-tree-header {
+  margin: 0;
+}
+
+
+/* 2 COLUMNS */
+.channel-list-team-header>a {
+  height: 3.0rem;
+}
+
+.channel-list-team-header .team-icon,
+.pin-channel-list-header .team-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.channel-list-channels li {
+  overflow: hidden;
+}
+
+.channel-list-channels li h3 {
+  font-size: 14px;
+}
+
+.channel-list-channels li h3 a {
+  height: 2.8rem;
+}
+
+.channel-list-channels li h3 .team-icon img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.channel-list-channels li:first-child:nth-last-child(1) {
+  display: none !important;
+}
+
+.channel-list-channels li {
+  width: 50%;
+  float: left;
+}
+
+.channel-list-channels li a {
+  width: 100%;
+  padding: 5px 0px 5px 20px !important;
+}
+
+.channel-list-channels li a .important-icon {
+  position: absolute;
+  top: -4px;
+  left: 3px;
+}
+
+.channel-list-channels li a .icons-more {
+  position: relative;
+  top: 0;
+  right: 0px;
+}
