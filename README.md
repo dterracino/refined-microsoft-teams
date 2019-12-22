@@ -3,7 +3,7 @@
 
 Too many Teams and channels ?
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot1.png)
 
 ## Features
 
@@ -13,7 +13,7 @@ Too many Teams and channels ?
 
 ## Chrome extension
 
-[Here]()
+[Here](https://chrome.google.com/webstore/detail/refined-microsoft-teams/bipffdldhfhcecjhcgklheahpkocojfk)
 
 ## Mac OSX app
 

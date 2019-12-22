@@ -1,7 +1,7 @@
 {
   "name": "__MSG_appName__",
   "description": "__MSG_appDescription__",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "manifest_version": 2,
   "icons": {
     "16": "images/icon-16.png",
@@ -21,12 +21,17 @@
       "https://teams.microsoft.com/*"
     ],
     "js": [
-      "scripts/refined.js"
+      "lib/jquery-3.4.1.min.js",
+      "scripts/injector.js"
     ],
     "css": [
-      "styles/refined.css"
+      "styles/refined.css",
+      "styles/bulk-add-team-members.css"
     ],
     "run_at": "document_end",
     "all_frames": false
-  }]
+  }],
+  "web_accessible_resources": [
+    "scripts/bulk-add-team-members.js"
+  ]
 }

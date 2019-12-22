@@ -1,0 +1,23 @@
+#refined-bulk-add-team-members-form textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+
+  resize: none;
+  background: #f3f2f1;
+  border: none;
+}
+
+#refined-bulk-add-team-members-form small {
+  margin-left: 10px;
+}
+
+.ts-add-members {
+  overflow: auto;
+}
+
+#refined-bulk-add-team-members-form .msgs p {
+  margin: 0;
+}
