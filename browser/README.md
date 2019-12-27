@@ -4,6 +4,10 @@
 
 [Go!](https://chrome.google.com/webstore/detail/refined-microsoft-teams/bipffdldhfhcecjhcgklheahpkocojfk)
 
+## Install from Firefox web store
+
+[Go!](https://addons.mozilla.org/en-US/firefox/addon/refined-microsoft-teams/)
+
 ## Test Chrome Extension
 
 To test, go to: chrome://extensions, enable Developer mode and load app as an unpacked extension.

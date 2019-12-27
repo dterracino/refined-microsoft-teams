@@ -1,4 +1,4 @@
-const crossPlatformBrowser = window.browser || window.msBrowser || window.chrome;
+const crossPlatformBrowser = window.browser || window.msBrowser || window.chrome || browser || msBrowser || chrome;
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 

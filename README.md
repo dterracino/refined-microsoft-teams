@@ -23,6 +23,10 @@ For the 2-column display, you need to switch from the "Grid" to the "List" view.
 
 [Here](https://chrome.google.com/webstore/detail/refined-microsoft-teams/bipffdldhfhcecjhcgklheahpkocojfk)
 
+## Firefox extension
+
+[Here](https://addons.mozilla.org/addon/refined-microsoft-teams/)
+
 ## Mac OSX app
 
 [Here](/HOWTO-MACOS.md)
