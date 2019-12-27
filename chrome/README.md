@@ -17,7 +17,11 @@ Need more information about Chrome Extension? Please visit [Google Chrome Extens
 Requires node <= 10.
 
 ```
-npm install -g gulp gulp-cli nodemon
+npm install -g gulp gulp-cli
+```
+
+```bash
+gulp watch
 ```
 
 ```bash
@@ -25,23 +29,17 @@ gulp build
 ```
 
 ```bash
-# equals to 'gulp build' + compression
 gulp package
-```
-
-```bash
-nodemon -i dist/ -i app/scripts --exec gulp build
 ```
 
 ### Release
 
 ```
-rm -rf dist
+rm -rf dist package
 rm -f refined-microsoft-teams.zip
+gulp clean
 gulp build
 gulp package
-cd dist/
-zip -r ../refined-microsoft-teams.zip *
 ```
 
 ## License
