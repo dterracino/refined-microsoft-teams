@@ -1,6 +1,4 @@
-// setInterval(() => {
-//   console.log("Hello world");
-// }, 1000);
+const crossPlatformBrowser = window.browser || window.msBrowser || window.chrome;
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 

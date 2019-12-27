@@ -71,3 +71,10 @@
   top: 0;
   right: 0px;
 }
+
+
+/* BUGFIX FIREFOX */
+/* https://github.com/samber/refined-microsoft-teams/issues/5 */
+.firefox .firefox-scrollbar-parent {
+  width: calc(100% + 80px) !important;
+}
