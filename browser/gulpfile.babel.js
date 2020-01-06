@@ -2,7 +2,7 @@
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import del from 'del';
-import runSequence from 'run-sequence';
+import runSequence from 'gulp4-run-sequence';
 import {
   stream as wiredep
 } from 'wiredep';
@@ -14,7 +14,7 @@ gulp.task('extras', () => {
     'app/*.*',
     'app/_locales/**',
     '!app/scripts.babel',
-    '!app/*.json',
+    // '!app/*.json',
     '!app/*.html',
   ], {
     base: 'app',
@@ -120,7 +120,7 @@ gulp.task('babel', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist', 'app/scripts']));
 
-gulp.task('watch', ['lint', 'babel'], () => {
+gulp.task('watch', gulp.series('lint', 'babel', () => {
   $.livereload.listen();
 
   gulp.watch([
@@ -133,7 +133,7 @@ gulp.task('watch', ['lint', 'babel'], () => {
 
   gulp.watch('app/scripts.babel/**/*.js', ['lint', 'babel']);
   gulp.watch('bower.json', ['wiredep']);
-});
+}));
 
 gulp.task('size', () => {
   return gulp.src('dist/**/*').pipe($.size({
@@ -164,6 +164,6 @@ gulp.task('build', (cb) => {
     'size', cb);
 });
 
-gulp.task('default', ['clean'], cb => {
+gulp.task('default', gulp.series('clean', cb => {
   runSequence('build', cb);
-});
+}));
